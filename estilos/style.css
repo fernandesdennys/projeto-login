@@ -6,5 +6,44 @@
   --color-03: #1B3659;  
   --color-04: #385773;
   --color-05: #82BBD9;
+}
 
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* Faz com que width e height incluam padding e border, evitando que o elemento aumente de tamanho inesperadamente.*/
+}
+body, html {
+    background-color: var(--color-04);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative; /* Faz com que o elemento fique posicionado em relação ao body */
+    height: 100vh;
+    width: 100vw;
+}
+section#login {
+    position: absolute; /* Faz com que o elemento fique posicionado em relação ao body ou ao seu ancestral "relative */
+    width: 300px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o elemento na tela */
+    background-color: var(--color-05);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.863);
+    overflow: hidden; /* Faz com que o elemento não mostre conteúdo que ultrapasse seu tamanho */ 
+    display: block;   
+}
+section#login > div#imagem {
+    background: #011126 url('../imagens/srfernandes04.jpg');
+    background-size: cover; /* Faz com que a imagem cubra todo o espaço disponível */
+    background-position: center; /* Faz com que a imagem fique centralizada */
+    border-radius: 15px;
+    height: 200px;
+    display: block;
 }
