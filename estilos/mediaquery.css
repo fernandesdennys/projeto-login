@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* Typical  Device Breackpoint 
+ Small devices (landscape phones, 576px and up) 
+ Extra small devices (phones, 600px and down) 
+ Large devices (desktops, 992px and up) 
+ Extra large devices (large desktops, 1200px and up) 
+ */
+
+ :root {
+    --color-01: #011126;
+    --color-02: #373748;  
+    --color-03: #1B3659;  
+    --color-04: #385773;
+    --color-05: #82BBD9;
+  }
+
+ @media screen and (min-width: 600px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, var(--color-01), var(--color-05));
+    }	
+    
+    section#login {
+        width: 90vw;
+    }
+    section#login > div#imagem {
+       float: left;
+       width: 30%;
+       height: 100%;
+    }
+    div#formulario {
+        float: right;
+        width: 70%;
+    }
+    
+ }
+
+    @media screen and (min-width: 992px) {
+        body {
+            background-image: linear-gradient(to top, var(--color-01), var(--color-05));
+        }
+
+        section#login {
+            width: 990px;
+        }
+        section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+        }
+        section#login > div#formulario {
+            float: right;
+            width: 50%;
+        }
+        
+    }
