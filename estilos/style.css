@@ -64,7 +64,65 @@ div#formulario > p {
     font-size: 0.8em;
     margin-bottom: 10px;
 }
-div#campo {
+div.campo {
     display: block;
     background-color: var(--color-05);
+
+}
+div.campo > label {
+    display: none;
+    
+}
+form > div.campo {
+    background-color: var(--color-05);
+    padding: 5px;
+    width: 100%;
+    margin: 5px 0px;
+    height: 40px;
+    border-radius: 5px;
+    display: block;
+    color: var(--color-06);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.863);
+    font-size: 0.8em;
+    
+}
+form > input[type="submit"] {
+    display: block;
+    font-size: 1em;
+    color: var(--color-06);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.863);;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-03);
+    &:hover {
+        background-color: var(--color-05);
+    }
+    
+}
+form > a.botao {
+    display: block;
+    font-size: 1em;
+    color : var(--color-06);
+    text-shadow:  2px 2px 2px rgba(0, 0, 0, 0.863);
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-03);
+    text-decoration: none;
+    &:hover {
+        background-color: var(--color-05);
+    }
+}
+form > a.botao > i {
+    font-size: 0.8em;
+    color: var(--color-06);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.863);
+    text-align: center;
+    text-decoration: none;
 }
