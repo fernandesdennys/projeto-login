@@ -14,7 +14,7 @@
     --color-05: #82BBD9;
   }
 
- @media screen and (min-width: 600px) and (max-width: 992px) {
+ @media screen and (min-width: 576px) and (max-width: 992px) {
     body {
         background-image: linear-gradient(to top, var(--color-01), var(--color-05));
     }	
