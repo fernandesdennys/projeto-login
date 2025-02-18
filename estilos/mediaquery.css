@@ -8,10 +8,12 @@
 
  :root {
     --color-01: #011126;
-    --color-02: #373748;  
+    --color-02: #373748;
+    --color-02a: #979ba4;  
     --color-03: #1B3659;  
     --color-04: #385773;
     --color-05: #82BBD9;
+    --color-06: #F2F2F2;
   }
 
  @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -43,13 +45,19 @@
             width: 990px;
         }
         section#login > div#imagem {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
         }
         section#login > div#formulario {
-            float: right;
+            float: left;
             width: 50%;
+        }
+        div#formulario > h1 {
+            font-size: 2em;
+        }
+        div#formulario > p {
+            font-size: 1.2em;
         }
         
     }

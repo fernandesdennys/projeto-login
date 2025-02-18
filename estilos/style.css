@@ -1,11 +1,13 @@
 @charset "utf-8";
 
 :root {
-  --color-01: #011126;
-  --color-02: #373748;  
-  --color-03: #1B3659;  
-  --color-04: #385773;
-  --color-05: #82BBD9;
+    --color-01: #011126;
+    --color-02: #373748;
+    --color-02a: #979ba4;  
+    --color-03: #1B3659;  
+    --color-04: #385773;
+    --color-05: #82BBD9;
+    --color-06: #F2F2F2;
 }
 
 *{
@@ -32,8 +34,7 @@ section#login {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Centraliza o elemento na tela */
-    background-color: var(--color-05);
-    padding: 10px;
+    background-image: linear-gradient(to bottom, var(--color-02a), var(--color-02));
     border-radius: 20px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.863);
     overflow: hidden; /* Faz com que o elemento não mostre conteúdo que ultrapasse seu tamanho */ 
@@ -42,14 +43,28 @@ section#login {
     transition-timing-function: ease-in-out;
 }
 section#login > div#imagem {
-    background: #011126 url('../imagens/srfernandes04.jpg');
+    background: #011126 url('../imagens/manutenção.jpg');
     background-size: cover; /* Faz com que a imagem cubra todo o espaço disponível */
     background-position: center; /* Faz com que a imagem fique centralizada */
-    border-radius: 15px;
     height: 200px;
     display: block;
 }
 section#login > div#formulario {
     display: block; /* Faz com que o elemento seja exibido como bloco */
     padding: 10px;
+}
+div#formulario > h1 {
+    color: var(--color-06);
+    text-align: center;
+    margin-bottom: 10px; 
+}
+div#formulario > p {
+    color: var(--color-06);
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+div#campo {
+    display: block;
+    background-color: var(--color-05);
 }

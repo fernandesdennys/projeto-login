@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mediaquery.css">
     <title>Projeto Login</title>
@@ -21,8 +23,21 @@
                     Faça login para acessar sua conta e
                     aproveitar nossos serviços.
                 </p>
-                <form action="login.php" method="post">
-                    
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="login" name="login" id="ilogin" placeholder="Digite seu e-mail" required autocomplete="email" required>
+                        <label for="ilogin" auto>Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required autocomplete="current-password" required minlength="8" maxlength="16">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#">Esqueceu sua senha? <i class="material-icons">email</i>
+
+                    </a>
 
                 </form>
                 
