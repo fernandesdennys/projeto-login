@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/mediaquery.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="imagens/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/mediaquery.css" />
     <title>Projeto Login</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <section id="login">
-            <div id="imagem">
-                
+      <section id="login">
+        <div id="imagem"></div>
+        <div id="formulario">
+          <h1>Login</h1>
+          <p>
+            Seja bem-vindo(a) novamente. Faça login para acessar sua conta e
+            aproveitar nossos serviços.
+          </p>
+          <form action="login.php" method="post" autocomplete="on">
+            <div class="campo">
+              <span class="material-icons">person</span>
+              <input
+                type="login"
+                name="login"
+                id="ilogin"
+                placeholder="Digite seu e-mail"
+                required
+                autocomplete="email"
+                required
+              />
+              <label for="ilogin" auto>Login</label>
             </div>
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente.
-                    Faça login para acessar sua conta e
-                    aproveitar nossos serviços.
-                </p>
-                <form action="login.php" method="post" autocomplete="on">
-                    <div class="campo">
-                        <span class="material-icons">person</span>
-                        <input type="login" name="login" id="ilogin" placeholder="Digite seu e-mail" required autocomplete="email" required>
-                        <label for="ilogin" auto>Login</label>
-                    </div>
-                    <div class="campo">
-                        <span class="material-icons">vpn_key</span>
-                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required autocomplete="current-password" required minlength="8" maxlength="16">
-                        <label for="isenha">Senha</label>
-                    </div>
-                    <input type="submit" value="Entrar">
-                    <a href="esqueci.html" class="botao">Esqueceu sua senha? <i class="material-icons">email</i>
-                    </a>
-
-                </form>
-                
+            <div class="campo">
+              <span class="material-icons">vpn_key</span>
+              <input
+                type="password"
+                name="senha"
+                id="isenha"
+                placeholder="Digite sua senha"
+                required
+                autocomplete="current-password"
+                required
+                minlength="8"
+                maxlength="16"
+              />
+              <label for="isenha">Senha</label>
             </div>
-        </section>
+            <input type="submit" value="Entrar" />
+            <a href="esqueci.html" class="botao"
+              >Esqueceu sua senha? <i class="material-icons">email</i>
+            </a>
+          </form>
+        </div>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>

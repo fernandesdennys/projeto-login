@@ -6,63 +6,61 @@
  Extra large devices (large desktops, 1200px and up) 
  */
 
- :root {
-    --color-01: #011126;
-    --color-02: #373748;
-    --color-02a: #979ba4;  
-    --color-03: #1B3659;  
-    --color-04: #385773;
-    --color-05: #82BBD9;
-    --color-06: #F2F2F2;
+:root {
+  --color-01: #011126;
+  --color-02: #373748;
+  --color-02a: #979ba4;
+  --color-03: #1b3659;
+  --color-04: #385773;
+  --color-05: #82bbd9;
+  --color-06: #f2f2f2;
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  body {
+    /*  CONFIGURAÇÕES PARA TABLET */
+    background-image: linear-gradient(to top, var(--color-01), var(--color-05));
   }
 
- @media screen and (min-width: 576px) and (max-width: 992px) {
-    body { /*  CONFIGURAÇÕES PARA TABLET */
-        background-image: linear-gradient(to top, var(--color-01), var(--color-05));
-    }	
-    
-    section#login {
-        width: 90vw;
-        height: 300px;
+  section#login {
+    width: 90vw;
+    height: 300px;
+  }
+  section#login > div#imagem {
+    float: left;
+    width: 30%;
+    height: 100%;
+  }
+  div#formulario {
+    float: right;
+    width: 70%;
+  }
+}
 
-    }
-    section#login > div#imagem {
-       float: left;
-       width: 30%;
-       height: 100%;
-    }
-    div#formulario {
-        float: right;
-        width: 70%;
-    }
-    
- }
+@media screen and (min-width: 992px) {
+  /* CONFIGURAÇÕES PARA DESKTOP/TV */
+  body {
+    background-image: linear-gradient(to top, var(--color-01), var(--color-05));
+  }
 
-    @media screen and (min-width: 992px) {
-        /* CONFIGURAÇÕES PARA DESKTOP/TV */
-        body {
-            background-image: linear-gradient(to top, var(--color-01), var(--color-05));
-        }
-
-        section#login {
-            width: 990px;
-            height: 350px;
-        }
-        section#login > div#imagem {
-        float: right;
-        width: 50%;
-        height: 100%;
-        }
-        section#login > div#formulario {
-            float: left;
-            width: 50%;
-        }
-        div#formulario > h1 {
-            font-size: 2em;
-        }
-        div#formulario > p {
-            font-size: 1em;
-            margin: 20px, 10px;
-        }
-        
-    }
+  section#login {
+    width: 990px;
+    height: 350px;
+  }
+  section#login > div#imagem {
+    float: right;
+    width: 50%;
+    height: 100%;
+  }
+  section#login > div#formulario {
+    float: left;
+    width: 50%;
+  }
+  div#formulario > h1 {
+    font-size: 2em;
+  }
+  div#formulario > p {
+    font-size: 1em;
+    margin: 20px, 10px;
+  }
+}

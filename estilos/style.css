@@ -1,145 +1,151 @@
 @charset "utf-8";
 
 :root {
-    --color-01: #011126;
-    --color-02: #373748;
-    --color-02a: #979ba4;  
-    --color-03: #1B3659;  
-    --color-04: #385773;
-    --color-05: #82BBD9;
-    --color-06: #F2F2F2;
+  --color-01: #011126;
+  --color-02: #373748;
+  --color-02a: #979ba4;
+  --color-03: #1b3659;
+  --color-04: #385773;
+  --color-05: #82bbd9;
+  --color-06: #f2f2f2;
 }
 
-*{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box; /* Faz com que width e height incluam padding e border, evitando que o elemento aumente de tamanho inesperadamente.*/
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /* Faz com que width e height incluam padding e border, evitando que o elemento aumente de tamanho inesperadamente.*/
 }
-body, html {
-    background-color: var(--color-04);
-    height: 100vh;
-    width: 100vw;
+body,
+html {
+  background-color: var(--color-04);
+  height: 100vh;
+  width: 100vw;
 }
 
 main {
-    position: relative; /* Faz com que o elemento fique posicionado em relação ao body */
-    height: 100vh;
-    width: 100vw;
+  position: relative; /* Faz com que o elemento fique posicionado em relação ao body */
+  height: 100vh;
+  width: 100vw;
 }
 section#login {
-    position: absolute; /* Faz com que o elemento fique posicionado em relação ao body ou ao seu ancestral "relative */
-    width: 300px;
-    height: 500px;
-    top: 50%;
-    left: 50%;
-    background-image: linear-gradient(to bottom, var(--color-02a), var(--color-02));
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.863);
-    overflow: hidden; /* Faz com que o elemento não mostre conteúdo que ultrapasse seu tamanho */ 
-    display: block;
-    transition: all 0.5s; /* Faz com que a transição de tamanho seja suave */
-    transition-timing-function: ease-in-out;
-    transform: translate(-50%, -50%); /* Centraliza o elemento na tela */
+  position: absolute; /* Faz com que o elemento fique posicionado em relação ao body ou ao seu ancestral "relative */
+  width: 300px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-02a),
+    var(--color-02)
+  );
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.863);
+  overflow: hidden; /* Faz com que o elemento não mostre conteúdo que ultrapasse seu tamanho */
+  display: block;
+  transition: all 0.5s; /* Faz com que a transição de tamanho seja suave */
+  transition-timing-function: ease-in-out;
+  transform: translate(-50%, -50%); /* Centraliza o elemento na tela */
 }
 section#login > div#imagem {
-    background: #011126 url('../imagens/manutenção.jpg');
-    background-size: cover; /* Faz com que a imagem cubra todo o espaço disponível */
-    background-position: center; /* Faz com que a imagem fique centralizada */
-    height: 200px;
-    display: block;
+  background: #011126 url("../imagens/manutenção.jpg");
+  background-size: cover; /* Faz com que a imagem cubra todo o espaço disponível */
+  background-position: center; /* Faz com que a imagem fique centralizada */
+  height: 200px;
+  display: block;
 }
 section#login > div#formulario {
-    display: block; /* Faz com que o elemento seja exibido como bloco */
-    padding: 10px;
+  display: block; /* Faz com que o elemento seja exibido como bloco */
+  padding: 10px;
 }
 div#formulario > h1 {
-    color: var(--color-06);
-    text-align: center;
-    margin-bottom: 10px; 
+  color: var(--color-06);
+  text-align: center;
+  margin-bottom: 10px;
 }
 div#formulario > p {
-    color: var(--color-06);
-    text-align: center;
-    font-size: 0.8em;
-    margin-bottom: 10px;
+  color: var(--color-06);
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 10px;
 }
 form > div.campo {
-    background-color: var(--color-05);
-    padding: 5px;
-    width: 100%;
-    margin: 5px 0px;
-    height: 40px;
-    border-radius: 5px;
-    display: block;
-    color: var(--color-06);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.863);
-    font-size: 0.8em;
+  background-color: var(--color-05);
+  padding: 5px;
+  width: 100%;
+  margin: 5px 0px;
+  height: 40px;
+  border-radius: 5px;
+  display: block;
+  color: var(--color-06);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.863);
+  font-size: 0.8em;
 }
 
 div.campo > label {
-    display: none;
+  display: none;
 }
 div.campo > span {
-    color: var(--color-06);
-    /*background-color: black;*/
-    font-size: 2em;
-    width: 40px;
-    padding: 5px;
+  color: var(--color-06);
+  /*background-color: black;*/
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
 }
 div.campo > input {
-    background-color: var(--color-01);
-    font-size: 1em;
-    width: calc(100% - 44px);
-    border: 0px;
-    height: 100%;
-    padding: 4px;
-    border-radius: 8px;
-    transform: translateY(-10px); /* Faz com que o campo de texto fique alinhado com o ícone */
+  background-color: var(--color-01);
+  font-size: 1em;
+  width: calc(100% - 44px);
+  border: 0px;
+  height: 100%;
+  padding: 4px;
+  border-radius: 8px;
+  transform: translateY(
+    -10px
+  ); /* Faz com que o campo de texto fique alinhado com o ícone */
 }
 div.campo > input:focus /* Quando o campo estiver com foco */ {
-    background-color: var(--color-06);
-    border: none;
+  background-color: var(--color-06);
+  border: none;
 }
 
 form > input[type="submit"] /* Quando o campo for do tipo submit */ {
-    display: block;
-    font-size: 1em;
-    color: var(--color-06);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.863);;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--color-03);
-    &:hover {
-        background-color: var(--color-05);
-    }
-    
+  display: block;
+  font-size: 1em;
+  color: var(--color-06);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.863);
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-03);
+  &:hover {
+    background-color: var(--color-05);
+  }
 }
 form > a.botao {
-    display: block;
-    font-size: 1em;
-    color : var(--color-06);
-    text-shadow:  2px 2px 2px rgba(0, 0, 0, 0.863);
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--color-03);
-    text-decoration: none;
-    &:hover {
-        background-color: var(--color-05);
-    }
+  display: block;
+  font-size: 1em;
+  color: var(--color-06);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.863);
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-03);
+  text-decoration: none;
+  &:hover {
+    background-color: var(--color-05);
+  }
 }
 form > a.botao > i {
-    font-size: 0.8em;
-    color: var(--color-06);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.863);
-    text-align: center;
-    text-decoration: none;
-    
+  font-size: 0.8em;
+  color: var(--color-06);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.863);
+  text-align: center;
+  text-decoration: none;
 }
